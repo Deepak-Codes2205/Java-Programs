@@ -1,0 +1,43 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+class eventhand1 extends Frame implements ActionListener
+{
+	Button b1;
+	Checkbox rb1,rb2,rb3;
+	CheckboxGroup cbg;
+	
+	eventhand1()
+	{
+		cbg=new CheckboxGroup();
+		rb1=new Checkbox("Red",true,cbg);
+		rb1.setBounds(100,50,100,20);
+		
+		rb2=new Checkbox("Green",false,cbg);
+		rb2.setBounds(210,50,100,20);
+		
+		rb3=new Checkbox("Blue",cbg,false);
+		rb3.setBounds(320,50,100,20);
+		
+		b1=new Button("Press");
+		b1.setBounds(210,90,100,30);
+		b1.addActionListener(this);
+		
+		add(rb1);
+		add(rb2);
+		add(rb3);
+		add(b1);
+		
+		setSize(500,500);
+		setVisible(true);
+		setLayout(null);
+	}
+	public void actionPerformed(ActionEvent ae)
+	{
+	}
+	public static void main(String [] ar)
+	{
+		new eventHand1();
+	}
+}

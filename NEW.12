@@ -1,0 +1,16 @@
+/* */
+
+import java.util.Scanner;
+
+class input
+{
+	public static void main(String [] ar)
+	{
+		String nm="";
+		int age=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name and age of the person :");
+		nm=sc.nextLine();
+		age=sc.Int();
+	}
+	

@@ -1,0 +1,7 @@
+/* FOCUS LISTENER */
+
+import java.awt.*;
+import java.awt.Event.*;
+import java.util.Scanner;
+
+class Event_hand4 extends Frame implements FocusListener
